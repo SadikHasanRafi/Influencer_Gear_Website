@@ -103,7 +103,7 @@ button:hover .fa-angle-right{
        Section 3
 --------------------*/
 .sec3{
-    min-height: 200vh;
+    height: 220vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -157,4 +157,77 @@ button:hover .fa-angle-right{
     display: flex;
     justify-content: flex-end;
     width: 100%;
+}
+
+/*------------------
+       Section 4
+--------------------*/
+.sec4{
+    height: 120vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.clients{
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    flex-wrap: wrap;
+}
+.client img{
+    width: 150px;
+    display: block;
+    margin: 25px auto;
+    border-radius: 50%;
+}
+.client{
+    width: 350px;
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 50px 25px;
+    border-radius: 15px;
+}
+.sec4 button{
+    margin-top: 100px; 
+}
+.sec4 h1{
+    margin-bottom: 100px;
+    font-size: 50px;
+}
+
+/*------------------
+       Footer
+--------------------*/
+footer{
+    position: relative;
+    bottom: 0;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--dark-color);
+    color: #fff;
+}
+.logos{
+    display: flex;
+    justify-content: space-evenly;
+    width: 20%;
+    margin-top: 30px;
+    font-size: 25px;
+}
+.logos a{
+    text-decoration: none;
+    color: #fff;
+}
+.logos i{
+    background-color: rgba(255, 255, 255, 0.205);
+    padding: 10px;
+    border-radius: 50%;
+    transition: background 0.3s, color 0.3s;
+}
+.logos a i:hover{
+    background-color: #fff;
+    color: var(--dark-color);
 }
