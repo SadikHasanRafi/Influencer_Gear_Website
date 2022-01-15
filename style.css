@@ -9,13 +9,10 @@
 }
 :root{
     --primary-color: #38CC77;
-    --dark-color: #3A3A3A;
+    --dark-color: #252525;
 }
 .half-width {
     width: 30vw;
-}
-.extra-margin{
-    margin: 0 10.5vw;
 }
 button{
     background-color: var(--primary-color);
@@ -64,7 +61,8 @@ button:hover{
     display: flex;
     align-items: center;
     height: 100vh;
-    justify-content: space-between;
+    justify-content: space-around;
+    width: 100%;
 }
 .sec1 article h1{
     font-size: 60px;
@@ -74,7 +72,7 @@ button:hover{
     margin:25px 0px;
     font-size: 20px;
 }
-.sec1 article button:hover i{
+button:hover .fa-angle-right{
     position: relative;
     left: 5px;
 }
@@ -83,26 +81,80 @@ button:hover{
        Section 2
 --------------------*/
 .sec2{
-    height: 5vh;
+    height: 15.5vh;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 .brandLogo-container{
     width: 80vw;
-    margin: 5vh 0px;
+    height: 100%;
+    align-items: center;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 .sec2 hr{
-    width: 70vw;
-    border: .5px solid rgb(189, 189, 189);
+    width: 90vw;
+    border: .5px solid rgb(235, 235, 235);
 }
 
 /*------------------
        Section 3
 --------------------*/
 .sec3{
-    height: 100vh;
+    min-height: 200vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.products-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.product{
+    background-color: #fafafa;
+    box-shadow: 0px 20px 60px -60px rgb(73, 73, 73);
+    border: .5px solid rgb(231, 231, 231);
+    padding: 25px;
+    border-radius: 15px;
+}
+.product img{
+    border-radius: 15px;
+}
+.product > h3{
+    font-size: 25px;
+    color: #FF6666;
+}
+.sec3 h1{
+    font-size: 50px;
+}
+.product h2{
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 1.7em;
+}
+.rating{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.rating i{
+    font-size: 15px;
+    color: #F4BE2C;
+}
+.rating p{
+    margin: 0px 10px;
+}
+.stock{
+    color: #4dd69d;
+    font-weight: 600;
+}
+.seemore-btn{
+    margin-top: 60px;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
 }
